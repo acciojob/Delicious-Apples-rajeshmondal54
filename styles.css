@@ -1,1 +1,156 @@
-/* your code here */
+/* Reset and global styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Helvetica Neue', sans-serif;
+  background: #7A419B; /* Fallback for old browsers */
+  background: linear-gradient(135deg, #7c1599 0%, #921099 48%, #7e4ae8 100%);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.product {
+  display: flex;
+  max-width: 800px;
+  margin: 20px;
+  background-color: #fff;
+  border: 5px solid rgba(0, 0, 0, 0.2);
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+
+.product__photo {
+  flex: 1;
+  padding: 20px;
+}
+
+.photo-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.photo-main {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.controls {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.photo-album {
+  margin-top: auto;
+}
+
+.photo-album ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+}
+
+.photo-album img {
+  max-width: 80px;
+  margin: 0 5px;
+  cursor: pointer;
+  border: 2px solid transparent;
+  transition: border-color 0.3s ease;
+}
+
+.photo-album img:hover {
+  border-color: #ffc600;
+}
+
+.product__info {
+  flex: 1;
+  padding: 20px;
+}
+
+.title {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.title h1 {
+  font-size: 2.5rem;
+}
+
+.title span {
+  display: block;
+  margin-top: 5px;
+  font-size: 1.2rem;
+  color: #666;
+}
+
+.price {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.variant {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.variant h3 {
+  margin-bottom: 10px;
+}
+
+.variant ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.variant img {
+  max-width: 60px;
+  margin: 0 10px;
+  cursor: pointer;
+  border: 2px solid transparent;
+  transition: border-color 0.3s ease;
+}
+
+.variant img:hover {
+  border-color: #ffc600;
+}
+
+.description {
+  text-align: center;
+}
+
+.description h3 {
+  margin-bottom: 10px;
+}
+
+.description ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.add-to-cart {
+  display: block;
+  margin: 0 auto;
+  padding: 10px 20px;
+  font-size: 1.5rem;
+  background-color: #ffc600;
+  border: none;
+  color: #000;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.add-to-cart:hover {
+  background-color: #ffcd33;
+}
